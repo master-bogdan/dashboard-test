@@ -1,0 +1,236 @@
+@import 'libs/bootstrap.min';
+
+@import 'base/variables';
+
+
+@import 'base/animations';
+@import 'base/media';
+
+body {
+    font-family: 'Open sans', sans-serif;
+}
+
+.logo {
+    height: 50px;
+}
+
+.max-width-297 {
+    max-width: 297px;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.view-height-100 {
+    height: 100vh;
+}
+
+.main-bg {
+    background: #2F80ED;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    position: relative;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    & .active-circle {
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        z-index: 1;
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-right: 18px solid white;
+        border-bottom: 25px solid transparent;
+        z-index: 99;
+        &::after {
+            position: absolute;
+            left: 2px;
+            top: 50%;
+            transform: translateY(-50%);
+            content: " ";
+            background: #63ECDB;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            z-index: 5;
+        }
+    }
+    &::before {
+        position: absolute;
+        right: -3px;
+        top: 10px;
+        content: " ";
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        z-index: 2;
+    }
+}
+
+a {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: right;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+        color: white;
+    }
+}
+
+.dotted {
+    width: 7%;
+    border-top: 2px dotted #fff;
+}
+
+.solid {
+    width: 90%;
+    border-top: 2px solid #fff;
+}
+
+#myChart {
+    border: 1px solid #E5E5E5;
+    padding: 88px 41px 35px 41px;
+    box-shadow: 0px 10px 16px rgba(79, 79, 79, 0.1);
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.btn-outline-primary {
+    width: 128px;
+    height: 36px;
+    border-radius: 52px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+
+.filter-btn {
+    position: relative;
+    border: 1px solid #63ECDB;
+    padding-left: 30px;
+    width: 128px;
+    height: 36px;
+    border-radius: 52px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    z-index: 55;
+    &.active {
+        border: 0 !important;
+        background: transparent !important;
+        color: #007bff !important;
+        &:focus {
+            box-shadow: none !important;
+        }
+        &::before {
+            content: none;
+        }
+    }
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        bottom: 0;
+        width: 10px;
+        height: 2px;
+        content: " ";
+        background: #2F80ED;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: 34px;
+        bottom: 0;
+        width: 2px;
+        height: 10px;
+        content: " ";
+        background: #2F80ED;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    &:hover {
+        background: initial;
+        color: #007bff;
+    }
+}
+
+.col-9 {
+    position: relative;
+    background: white;
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    &::before {
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #2f80ed;
+        position: absolute;
+        z-index: -5;
+    }
+}
+
+.accordion {
+    
+    & .card {
+        box-shadow: 0px 10px 16px rgba(79, 79, 79, 0.1);
+        border-radius: 18px !important;
+        border-top-left-radius: 0 !important;
+        border: 1px solid #E5E5E5;
+        &-header {
+            position: relative;
+            background: transparent;
+            // box-shadow: 0px 10px 16px rgba(79, 79, 79, 0.1);
+            border: none;
+            width: fit-content;
+            border: 1px solid #E5E5E5;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+            border-bottom: none;
+            z-index: 99;
+            &::after {
+                content: '';
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                background: white;
+                right: 0;
+                left: 0;
+                bottom: -1px;
+            }
+        }
+        &-body {
+            border-radius: 18px;
+        }
+    }
+}
+
+.year-filter {
+    text-align: center;
+    width: 137px;
+    height: 100%;
+    padding-bottom: 17px;
+    cursor: pointer;
+
+    &.active {
+        border-bottom: 5px solid #2F80ED;
+    }
+}

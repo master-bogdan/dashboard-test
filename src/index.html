@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>eDashLight</title>
+</head>
+<body>
+    
+    <div class="container-fluid">
+    <div class="row view-height-100">
+
+        <!-- Menu aside -->
+        <div class="col-3 max-width-297 main-bg d-flex justify-content-end flex-wrap">
+
+            <div class="row justify-content-end w-100">
+                <ul class="nav flex-column nav-tabs border-0 align-items-end" id="myTab" role="tablist">
+                    <li class="logo mt-3 justify-content-end w-85">
+                        <div class="row justify-content-start">
+                            <a class="d-block w-100" href="#">
+                                <img src="./icons/Logo.svg" width="135" height="25" class="d-block" alt="logo" loading="lazy">
+                            </a>
+                            <div class="row w-100 mt-3">
+                                <span class="dotted"></span>
+                                <span class="solid"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item mt-5" role="presentation">
+                      <a class="nav-link active pr-4" id="revenues-tab" data-toggle="tab" href="#revenues" role="tab" aria-controls="home" aria-selected="true">
+                        <div class="active-circle"></div>
+                          Revenues
+                        </a>
+                      
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link pr-4" id="gross-tab" data-toggle="tab" href="#gross" role="tab" aria-controls="profile" aria-selected="false">
+                        <div class="active-circle"></div>  
+                        Gross Profit MMAs</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link pr-4" id="total-tab" data-toggle="tab" href="#total" role="tab" aria-controls="messages" aria-selected="false">
+                        <div class="active-circle"></div>  
+                        Total Web Sessions</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link pr-4" id="sales-tab" data-toggle="tab" href="#sales" role="tab" aria-controls="settings" aria-selected="false">
+                        <div class="active-circle"></div>  
+                        Web Sales</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link pr-4" id="order-size-tab" data-toggle="tab" href="#order-size" role="tab" aria-controls="settings" aria-selected="false">
+                            <div class="active-circle"></div>
+                            avg order sizes</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link pr-4" id="new-sales-tab" data-toggle="tab" href="#new-sales" role="tab" aria-controls="settings" aria-selected="false">
+                            <div class="active-circle"></div>
+                            new customer sales ord...</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link pr-4" id="sales-orders-tab" data-toggle="tab" href="#sales-orders" role="tab" aria-controls="settings" aria-selected="false">
+                            <div class="active-circle"></div>
+                            sales orders counts</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link pr-4" id="total-web-tab" data-toggle="tab" href="#total-web" role="tab" aria-controls="settings" aria-selected="false">
+                            <div class="active-circle"></div>
+                            total web sessions</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link pr-4" id="visitors-tab" data-toggle="tab" href="#visitors" role="tab" aria-controls="settings" aria-selected="false">
+                            <div class="active-circle"></div>
+                            visitor web sessions</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link pr-4" id="web-forms-tab" data-toggle="tab" href="#web-forms" role="tab" aria-controls="settings" aria-selected="false">
+                            <div class="active-circle"></div>
+                            web forms submissions</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="row w-75 mb-3 justify-content-end align-items-end">
+                <ul class="nav flex-column ">
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <span class="d-flex align-items-center">
+                            settings
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear-fill ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <span class="d-flex align-items-center">
+                            logout
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg>
+                        </span>
+                    </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+        <!-- Information Area -->
+        <div class="col-9 rounded-left pt-5 pb-5">
+            <div class="container">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="revenues" role="tabpanel" aria-labelledby="revenues-tab">
+
+                        <div class="accordion mb-4" id="accordionExample">
+                            <div class=" " id="headingOne">
+                                <button class="btn btn-outline-primary filter-btn"
+                                    id="filter-btn" 
+                                    type="button" 
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Filters
+                            </button>
+                            </div>
+                            <div class="card border-0" id="card-border">
+                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body p-4">
+                                    <div class="container d-flex justify-content-around mt-3 border-bottom">
+                                        <div class="year-filter">2018</div>
+                                        <div class="year-filter active">2019</div>
+                                        <div class="year-filter">2020</div>
+                                    </div>
+
+                                    <div class="container d-flex justify-content-around mt-5 mb-5">
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Q1</label>
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Q2</label>
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Q3</label>
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Q4</label>
+                                        </div>
+                                    </div>
+                                  <div class="container d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary" 
+                                    type="button" 
+                                    >
+                                        show
+                                    </button>
+                                    <button class="btn btn-outline-primary" 
+                                    type="button" 
+                                    >
+                                        compare
+                                    </button>
+                                    <button class="btn btn-outline-primary" 
+                                    type="button" 
+                                    >
+                                        month to date
+                                    </button>
+                                    <button class="btn btn-outline-primary" 
+                                    type="button" 
+                                    >
+                                        Year to date
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="tab-pane" id="gross" role="tabpanel" aria-labelledby="gross-tab">Gross Profit MMAs</div>
+                    <div class="tab-pane" id="total" role="tabpanel" aria-labelledby="total-tab">Total Web Sessions</div>
+                    <div class="tab-pane" id="sales" role="tabpanel" aria-labelledby="sales-tab">Web Sales</div>
+                    <div class="tab-pane" id="order-size" role="tabpanel" aria-labelledby="order-size-tab">avg order sizes</div>
+                    <div class="tab-pane" id="new-sales" role="tabpanel" aria-labelledby="new-sales-tab">new customer sales ord...</div>
+                    <div class="tab-pane" id="sales-orders" role="tabpanel" aria-labelledby="sales-orders-tab">sales orders counts</div>
+                    <div class="tab-pane" id="total-web" role="tabpanel" aria-labelledby="total-web-tab">total web sessions</div>
+                    <div class="tab-pane" id="visitors" role="tabpanel" aria-labelledby="visitors-tab">visitor web sessions</div>
+                    <div class="tab-pane" id="web-forms" role="tabpanel" aria-labelledby="web-forms-tab">web forms submissions</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <script src="js/bundle.js"></script>
+</body>
+</html>
