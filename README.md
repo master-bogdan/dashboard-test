@@ -1,5 +1,4 @@
-# Test project HTML / CSS / JS / Bootstrap dashboard coding  
-[DEMO](https://master-bogdan.github.io/dashboard-test/)   
+# Test project HTML / CSS / JS / Bootstrap dashboard coding [[DEMO](https://master-bogdan.github.io/dashboard-test/)]    
 ## Technologies used
 - HTML5, CSS3, Native JavaScript
 - SCSS
