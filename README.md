@@ -1,5 +1,11 @@
 # Test project HTML / CSS / JS / Bootstrap dashboard coding  
-
+[DEMO](https://master-bogdan.github.io/dashboard-test/)   
+## Technologies used
+- HTML5, CSS3, Native JavaScript
+- SCSS
+- Gulp
+- Bootstrap framework
+- ChartJS
 ## Project structure
 - `/dist` folder for minimized production code
 - `/src` folder with original source filse and settings
